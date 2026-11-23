@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
+         https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <display-name>MyToken</display-name>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+    <!-- Login -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.mytoken.controller.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <!-- Logout -->
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.mytoken.controller.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <!-- Admin - Canteen -->
+    <servlet>
+        <servlet-name>CanteenServlet</servlet-name>
+        <servlet-class>com.mytoken.controller.CanteenServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CanteenServlet</servlet-name>
+        <url-pattern>/admin/canteen</url-pattern>
+    </servlet-mapping>
+
+    <!-- Admin - Token -->
+    <servlet>
+        <servlet-name>TokenServlet</servlet-name>
+        <servlet-class>com.mytoken.controller.TokenServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TokenServlet</servlet-name>
+        <url-pattern>/admin/token</url-pattern>
+    </servlet-mapping>
+
+    <!-- Admin - User -->
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>com.mytoken.controller.UserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/admin/user</url-pattern>
+    </servlet-mapping>
+
+    <!-- Admin - Dashboard -->
+    <servlet>
+        <servlet-name>AdminDashboardServlet</servlet-name>
+        <servlet-class>com.mytoken.controller.AdminDashboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminDashboardServlet</servlet-name>
+        <url-pattern>/admin/dashboard</url-pattern>
+    </servlet-mapping>
+
+    <!-- Employee - Dashboard -->
+    <servlet>
+        <servlet-name>EmployeeDashboardServlet</servlet-name>
+        <servlet-class>com.mytoken.controller.EmployeeDashboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EmployeeDashboardServlet</servlet-name>
+        <url-pattern>/employee/dashboard</url-pattern>
+    </servlet-mapping>
+
+    <!-- Employee - Booking -->
+    <servlet>
+        <servlet-name>BookingServlet</servlet-name>
+        <servlet-class>com.mytoken.controller.BookingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookingServlet</servlet-name>
+        <url-pattern>/employee/booking</url-pattern>
+    </servlet-mapping>
+
+    <!-- Employee - Monthly Due -->
+    <servlet>
+        <servlet-name>MonthlyDueServlet</servlet-name>
+        <servlet-class>com.mytoken.controller.MonthlyDueServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MonthlyDueServlet</servlet-name>
+        <url-pattern>/employee/monthly-due</url-pattern>
+    </servlet-mapping>
+
+</web-app>
