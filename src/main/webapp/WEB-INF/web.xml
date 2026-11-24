@@ -75,34 +75,4 @@
         <url-pattern>/admin/dashboard</url-pattern>
     </servlet-mapping>
 
-    <!-- Employee - Dashboard -->
-    <servlet>
-        <servlet-name>EmployeeDashboardServlet</servlet-name>
-        <servlet-class>com.mytoken.controller.EmployeeDashboardServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>EmployeeDashboardServlet</servlet-name>
-        <url-pattern>/employee/dashboard</url-pattern>
-    </servlet-mapping>
-
-    <!-- Employee - Booking -->
-    <servlet>
-        <servlet-name>BookingServlet</servlet-name>
-        <servlet-class>com.mytoken.controller.BookingServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>BookingServlet</servlet-name>
-        <url-pattern>/employee/booking</url-pattern>
-    </servlet-mapping>
-
-    <!-- Employee - Monthly Due -->
-    <servlet>
-        <servlet-name>MonthlyDueServlet</servlet-name>
-        <servlet-class>com.mytoken.controller.MonthlyDueServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>MonthlyDueServlet</servlet-name>
-        <url-pattern>/employee/monthly-due</url-pattern>
-    </servlet-mapping>
-
 </web-app>
