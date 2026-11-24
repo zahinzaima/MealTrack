@@ -5,9 +5,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBConnection {
-    private static final String URL = "jdbc:mysql://localhost:3306/mytoken_db?useSSL=false&serverTimezone=Asia/Dhaka&allowPublicKeyRetrieval=true";
+    private static final String URL = "jdbc:mysql://hopper.proxy.rlwy.net:51230/railway?useSSL=false&serverTimezone=Asia/Dhaka&allowPublicKeyRetrieval=true";
     private static final String USERNAME = "root";
-    private static final String PASSWORD = "Root@1234";
+    private static final String PASSWORD = "JnKsrrKnfvSHmGrmWiRYYkiAnpbWCxSn";
 
     private static Connection connection = null;
 
