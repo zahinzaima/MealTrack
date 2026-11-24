@@ -61,7 +61,8 @@ public class UserDAO {
              PreparedStatement ps = conn.prepareStatement(sql)) {
             ps.setString(1, user.getName());
             ps.setString(2, user.getEmail());
-            ps.setString(3, BCrypt.hashpw(user.getPin(), BCrypt.gensalt()));
+            /*ps.setString(3, BCrypt.hashpw(user.getPin(), BCrypt.gensalt())); */
+            ps.setString(3, user.getPin());
             ps.setString(4, user.getRole());
             ps.setString(5, user.getDepartment());
             ps.setString(6, user.getDesignation());
