@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div class="sidebar">
     <div class="sidebar-logo">
-        <h2>MyToken</h2>
+        <h2>🍽️ MyToken</h2>
         <p>Admin Panel</p>
     </div>
 
